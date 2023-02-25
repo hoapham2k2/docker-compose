@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: Phamquanghoa1!
+      MSSQL_PID: Developer
+      ACCEPT_EULA: Y
+    ports:
+      - "1433:1433"
+
+      # cmd: docker-compose up -d
+      # server: localhost
+      # account: sa
+      # password: Phamquanghoa1!
